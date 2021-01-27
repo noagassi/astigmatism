@@ -1,0 +1,516 @@
+
+
+*{
+  box-sizing: border-box;
+}
+
+@font-face { 
+font-family: "GINTO";
+src: url('fonts/GINTO.woff') format('woff');
+}
+
+@font-face {
+font-family: "OPTICIAN-SANS";
+src: url('fonts/OPTICIAN-SANS.woff') format('woff');
+
+}
+
+@font-face { 
+font-family: "AVENIR";
+src: url('fonts/AVENIR.woff') format('woff');
+}
+
+@font-face { 
+font-family: "GRETA";
+src: url('fonts/GRETA.woff')format('woff');
+}
+
+@font-face{
+  font-family: "SUNDAY";
+  src: url('fonts/SUNDAY.woff')format('woff');
+}
+
+
+body{
+  background-color:#dadada;
+  background-image: url('images/back.png');
+  background-blend-mode: overlay;
+}
+
+
+.sub{
+  margin-top:200px;
+}
+
+.glasses{
+  background-image: url('images/merlin.jpg');
+  opacity: 45%;
+  right: 10vw;
+  padding-right: 12vw;
+  top: 4vw;
+  height: 50vw;
+  width: 50vw;
+  background-repeat: no-repeat;
+  position:absolute;
+  z-index: 4;
+  
+
+}
+
+
+.row{
+    display: flex;
+    align-items: baseline;
+    padding-left: -100px;
+}
+
+
+.line{
+  position: relative;
+  z-index: 2;
+  background-color: #41FF01;
+  left: 9vw;
+
+}
+
+.uno{
+  position: relative;
+  z-index: 2;
+  background-color: #41FF01;
+  height: 3vw;
+  width: 100vw;
+  left: 9vw;
+  top: 16.3vw;
+  
+}
+
+.dos{
+  height: 2.8vw;
+  width: 39vw;
+  left: 9vw;
+  top: 19.8vw;
+}
+
+.tres{
+  height: 2.8vw;
+  width: 39vw;
+  left: 9vw;
+  top: 22.7vw;
+  display: none;
+}
+
+.quad{
+  height: 2.8vw;
+  width: 39vw;
+  left: 9vw;
+  top: 25vw;
+  display: none;
+}
+
+.cinc{
+  height: 2.8vw;
+  width: 39vw;
+  left: 9vw;
+  top: 26.5vw;
+  display: none;
+}
+
+.sei{
+  height: 2.8vw;
+  width: 39vw;
+  left: 9vw;
+  top: 27.5vw;
+  display: none;
+}
+
+
+.siet{
+  height: 2.8vw;
+  width: 39vw;
+  left: 9vw;
+  top: 28vw;
+  display: none;
+}
+
+
+
+
+
+.header{
+
+  color: black;
+  opacity: 1;
+  font-family: GINTO NORD;
+  font-weight: bold;
+  font-size: 5.8vw;
+  line-height: 5vw;
+  top: 0.5vw;
+}
+
+
+
+
+.menu{
+  position: fixed;
+  z-index: 5;
+  bottom: 40px;
+  margin: 0px;
+  border: 0px;
+  margin-left: -12px;
+  padding-left: 0;
+  font-family: GINTO NORD;
+  font-weight: bold;
+  text-align: left;
+  line-height: auto;
+}
+
+
+.mask{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#dadada;
+    background-image: url('images/back.png');
+    background-blend-mode: overlay;
+    height: 41vh;
+}
+
+.masking{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color:#dadada;
+  background-image: url('images/back.png');
+  background-blend-mode: overlay;
+  height: 4.6vh;
+  z-index: 8;
+
+}
+
+
+.category{
+  position: relative;
+}
+
+.category .after{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 4vh;
+    background-color: #41FF01;
+    z-index: -1;
+    transform: translate(0 , -50%);
+}
+
+.header .after{
+  width: 100%;
+}
+
+.marker{
+  animation: marker 1s;
+  animation-fill-mode: forwards;
+}
+
+.marker2{
+  animation: marker2 1s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes marker {
+  from {width: 0;}
+  to {width: 100%;}
+}
+
+@keyframes marker2 {
+  from {width: 100%;}
+  to {width: 0;}
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.fractions{
+  position: fixed;
+  z-index: 2;
+  text-align: right;
+  right: -3px;
+  top: 27px;
+  line-height: 2.68em;
+  font-family: 'OPTICIAN-SANS';
+  font-size: 1.1em;
+  color: red;
+}
+
+.num{
+  font-family: 'OPTICIAN-SANS';
+  font-weight: bold;
+  color: red;
+  width: 10vw;
+}
+
+
+.zero{
+  font-size: 6vw;
+  padding-right: 20px;
+  position: absolute;
+  z-index: 1;
+  top: 15.2vw;
+  left: -1vw;
+}
+
+.one{
+  font-size: 5.2vw;
+
+}
+
+.two{
+  font-size: 4.2vw;
+ 
+}
+
+.three{
+  font-size: 3.4vw;
+  
+}
+
+.four{
+  font-size: 2.7vw;
+  
+}
+
+.five{
+  font-size: 2.1vw;
+ 
+}
+
+.six{
+  font-size: 1.5vw;
+ 
+}
+
+.first{
+  border: 1px;
+  margin: 0px;
+
+}
+
+.second{
+
+  border: 1px;
+  margin: 0px;
+}
+.third{
+
+  border: 1px;
+  margin: 0px;
+}
+.fourth{
+ 
+  border: 1px;
+  margin: 0px;
+}
+
+.fifth{
+
+  border: 1px;
+  margin: 0px;
+}
+
+.sitxth{
+
+  border: 1px;
+  margin: 0px;
+}
+
+
+
+
+h1{
+  font-size: 5.5vw;
+  letter-spacing: 0.15em;
+  text-align: left;
+  margin: 5px 0px 5px 0px;
+  line-height: 7vw;
+}
+
+h2{
+  font-size: 4.5vw;
+    letter-spacing: 0.25em;
+    text-align: left;
+    margin: 5px 0px 5px 0px;
+    line-height: 4vw;
+}
+
+h3{
+  font-size: 3.7vw;
+    letter-spacing: 0.5em;
+    text-align: left;
+    margin: 5px 0px 5px 0px;
+    line-height: 5.5vw;
+}
+
+
+
+h4{
+  font-size: 2.7vw;
+    letter-spacing: 0.2em;
+    text-align: left;
+    margin: 5px 0px 5px 0px;
+    line-height: 2.5vw;
+
+}
+
+h5{
+  font-size: 2.2vw;
+    letter-spacing: 0.2em;
+    text-align: left;
+    margin: 5px 0px 5px 0px;
+    line-height: 4.5vw;
+}
+
+h6{
+  font-size: 1.3vw;
+    letter-spacing: 0.15em;
+    text-align: left;
+    margin: 5px 0px 5px 0px;
+    line-height: 0.9vw;
+
+}
+
+
+.info{
+  width: 40vw;
+  height: 70vh;
+  padding-top: 100vh;
+  margin-left: 50vw;
+  margin-bottom: 20vh;
+  padding-right: 15px;
+  font-family: 'SUNDAY';
+  font-size: 1.2em;
+  line-height: 1.3em;
+ 
+}
+
+
+#patho{
+  padding-bottom: 18vh;
+}
+
+
+#general{
+  padding-top: 40.5vh;
+}
+
+
+#history{
+  padding-top: 37.72vh;
+}
+
+#causes{
+  padding-top: 37.8vh;
+}
+
+#diagnosis{
+  padding-top: 41vh;
+}
+
+#treatment{
+  padding-top: 40.5vh;
+}
+
+#patho{
+  padding-top: 53vh;
+}
+
+
+.highlight{
+    background-color: #41FF01;
+    display: inline-block;
+    position: relative;  
+    padding-top: -10px;
+  padding-bottom: -10px;
+}
+
+.word{
+  display: relative;
+  break-before: none;
+
+}
+
+.hide{
+  opacity: 0;
+z-index: 7;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    transition: all 0.5s;
+}
+
+
+.gif{
+  width: 45vw;
+  height: 100%;
+  opacity: 70%;
+  z-index: 9;
+  padding-top: 8vh;
+  padding-bottom: 17vh;
+}
+
+.hide img{
+  height: 100px;
+  width: auto;
+
+  
+}
+
+.highlight:hover > .hide{
+  opacity: 1;
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+
+.koteret{
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+ol{
+  font-weight: bold;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+
+
