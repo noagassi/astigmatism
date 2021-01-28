@@ -140,7 +140,7 @@ body{
 
   color: black;
   opacity: 1;
-  font-family: GINTO NORD;
+  font-family: GINTO;
   font-weight: bold;
   font-size: 5.8vw;
   line-height: 5vw;
@@ -158,7 +158,7 @@ body{
   border: 0px;
   margin-left: -12px;
   padding-left: 0;
-  font-family: GINTO NORD;
+  font-family: GINTO;
   font-weight: bold;
   text-align: left;
   line-height: auto;
@@ -462,7 +462,7 @@ z-index: 7;
 
 
 .gif{
-  width: 45vw;
+  width: 100%;
   height: 100%;
   opacity: 70%;
   z-index: 9;
