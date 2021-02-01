@@ -1,4 +1,5 @@
 <html>
+
   <head>
     <meta charset="utf-8">
     <title>ASTIGMATISM</title>
@@ -9,17 +10,16 @@
   </head>
 
   <body>
+      <div class="bag">
+            <button id="unblurbutton" onclick="blurfilter">normal</button>
+            <button id="blurbutton">compromise</button>
 
-      <div class="glasses" id="myglasses">
-      </div>
-
-      <div class="mask">        
-      </div>
-
-      <div class="masking">        
-      </div>
+          </div>
 
 
+          
+      <div class="bodyblur">
+      
 
   	
 
@@ -122,18 +122,27 @@
 
 
     <div class="fractions">
-        <p>20/200</p>
-        <p>20/100</p>
-        <p>20/70</p>
-        <p>20/50</p>
-        <p>20/40</p>
-        <p>20/30</p>
-        <p>20/25</p>
-        <p>20/20</p>
-        <p>20/15</p>
-        <p>20/13</p>
-        <p>20/10</p>
+        <div class="item">20/200</div>
+        <div class="item">20/100</div>
+        <div class="item">20/70</div>
+        <div class="item">20/50</div>
+        <div class="item">20/40</div>
+        <div class="item">20/30</div>
+        <div class="item">20/25</div>
+        <div class="item">20/20</div>
+        <div class="item">20/15</div>
+        <div class="item">20/13</div>
+        <div class="item">20/10</div>
     </div>
+
+<div class="glasses" id="myglasses">
+      </div>
+
+      <div class="mask">        
+      </div>
+
+      <div class="masking">        
+      </div>
 
 
   <div class="container info">
@@ -177,13 +186,13 @@
 
           <p>In Europe and Asia, astigmatism affects between 30% and 60% of adults. People of all ages can be affected by astigmatism.</p>
 
-          <p>
+          
             Astigmatism was first reported by 
             <div class="highlight">
                   <div class="word tom">Thomas Young</div>
                   <div class="hide"><img src="images/tom.jpg"></div>
             </div>
-          in 1801.</p>
+          in 1801.
 
           
       </div>
@@ -214,13 +223,13 @@
                   <div class="hide"><img src="images/will.jpg"></div>
             </div> 
 
-        By the 1860s astigmatism was a well established concept in ophthalmology, and chapters in books described the discovery of astigmatism. Astigmatism was first reported by Thomas Young in 1801.
+        By the 1860's, astigmatism was a well established concept in ophthalmology, and chapters in books described the discovery of astigmatism. Astigmatism was first reported by Thomas Young in 1801.
       </div>
 
       <div class="sub" id="causes">
         The cause of astigmatism is unclear, however it is believed to be partly related to genetic factors, although, based on 
       <div class="highlight">
-           <div class="word twin">twin studies.</div>
+           <div class="word twin">twin studies</div>
               <div class="hide"><img src="images/twin.jpg">
            </div>
       </div> in 2007, genetics appear to play only a small role in astigmatism.
@@ -230,7 +239,7 @@
       </div>
 
       <div class="sub" id="diagnosis">
-        A number of <div class="highlight"><div class="word tests">tests</div><div class="hide"><img src="images/fail.jpg"></div></div> are used during eye examinations to determine the presence of astigmatism and to quantify its amount and axis. A Snellen chart or other eye charts may initially reveal reduced visual acuity. A keratometer may be used to <div class="highlight"><div class="word measure">measure</div><div class="hide"><img src="images/measure.jpg"></div></div> the curvature of the steepest and flattest meridians in the cornea's front surface. Corneal topography may also be used to obtain a more accurate representation of the cornea's shape. An <div class="highlight"><div class="word ref">autorefractor</div><div class="hide"><img src="images/ref.jpg"></div></div> or <div class="highlight"><div class="word retin">retinoscopy</div><div class="hide"><img src="images/retin.jpg"></div></div> may provide an objective estimate of the eye's refractive error and the use of Jackson cross cylinders in a phoropter or trial frame may be used to subjectively refine those measurements. An alternative technique with the phoropter requires the use of a "clock dial" or "sunburst" chart to determine the astigmatic axis and power. A keratometer may also be used to estimate astigmatism by finding the difference in power between the two primary meridians of the cornea. Javal's rule can then be used to compute the estimate of astigmatism.
+        A number of <div class="highlight"><div class="word tests">tests</div><div class="hide"><img src="images/fail.jpg"></div></div> are used during eye examinations to determine the presence of astigmatism and to quantify its amount and axis. A Snellen chart or other eye charts may initially reveal reduced visual acuity. A keratometer may be used to <div class="highlight"><div class="word measure">measure</div><div class="hide"><img src="images/measure.jpg"></div></div> the curvature of the steepest and flattest meridians in the cornea's front surface. Corneal topography may also be used to obtain a more accurate representation of the cornea's shape. An <div class="highlight"><div class="word ref">autorefractor</div><div class="hide"><img src="images/ref.jpg"></div></div> or <div class="highlight"><div class="word retin">retinoscopy</div><div class="hide"><img src="images/retin.jpg"></div></div> may provide an objective estimate of the eye's refractive error and the use of Jackson cross cylinders in a phoropter or trial frame may be used to subjectively refine those measurements. An alternative technique with the phoropter requires the use of a "clock dial" or "sunburst" chart to determine the astigmatic axis and power. A <div class="highlight"><div class="word kera">keratometer</div><div class="hide"><img src="images/kera.jpg"></div></div> may also be used to estimate astigmatism by finding the difference in power between the two primary meridians of the cornea. Javal's rule can then be used to compute the estimate of astigmatism.
          A method of astigmatism analysis by Alpins may be used to determine both how much surgical change of the cornea is needed and after surgery to determine how close treatment was to the <div class="highlight"><div class="word goal">goal</div><div class="hide"><img src="images/goal.jpg"></div></div>.
 
         
@@ -248,12 +257,20 @@
 
 
       <div class="sub" id="treatment">
-        Astigmatism may be corrected with eyeglasses, contact lenses, or refractive surgery. Glasses are the simplest and safest, although contact lenses can provide a wider field of vision. Refractive surgery can eliminate the need to wear corrective lenses altogether by permanently changing the shape of the eye but, like all elective surgery, comes with both greater risk and expense than the non-invasive options. Various considerations involving eye health, refractive status, and lifestyle determine whether one option may be better than another. In those with keratoconus, certain contact lenses often enable patients to achieve better visual acuity than eyeglasses. Once only available in a rigid, gas-permeable form, toric lenses are now also available as soft lenses.
-
-        <p>In older people, astigmatism can also be corrected during cataract surgery. This can either be done by inserting a toric intraocular lens or by performing special incisions (limbal relaxing incisions). Toric intraocular lenses probably provide a better outcome with respect to astigmatism in theses cases than limbal relaxing incisions.</p>
+        Astigmatism may be corrected with eyeglasses, contact lenses, or refractive surgery. Glasses are the simplest and <div class="highlight"><div class="word safe">safest,</div><div class="hide"><img src="images/safety.jpg"></div></div> although contact lenses can provide a wider field of vision. Refractive surgery can eliminate the need to wear corrective lenses altogether by permanently changing the shape of the eye but, like all elective surgery, comes with both greater risk and <div class="highlight"><div class="word expense">expense</div><div class="hide"><img src="images/expense.jpg"></div></div> than the non-invasive options. Various considerations involving eye health, refractive status, and <div class="highlight"><div class="word lifestyle">lifestyle</div><div class="hide"><img src="images/lifestyle.jpg"></div></div>determine whether one option may be better than another. In those with keratoconus, certain contact lenses often enable patients to achieve better visual acuity than eyeglasses. Once only available in a rigid, gas-permeable form, toric lenses are now also available as soft lenses.
 
         <p>Toric intraocular lenses can additionally be used in patients with complex ophthalmic history, such as previous ophthalmic surgery. In such complex cases, toric intraocular lenses seems to be as effective as in non-complex cases for correction of concurrent corneal astigmatism.</p>
+
+        In <div class="highlight"><div class="word senior">older people,</div><div class="hide"><img src="images/senior.jpeg"></div></div> astigmatism can also be corrected during cataract surgery. This can either be done by inserting a toric intraocular lens or by performing special incisions (limbal relaxing incisions). Toric intraocular lenses probably provide a better outcome with respect to astigmatism in theses cases than limbal <div class="highlight"><div class="word relax">relaxing</div><div class="hide"><img src="images/relax.jpg"></div></div> incisions.
+
+        
       </div>
+
+
+            <div class="gif">
+                <img src='images/twirl.gif'>
+            </div>
+
 
       <div class="sub" id="patho">
       <div class="koteret">Axis of the principal meridian</div>
@@ -275,22 +292,30 @@
           <div class="koteret">Focus of the principal meridian</div>
           <p>With accommodation relaxed:</p>
 
-          <ol>Simple astigmatism</ol>
-          <li>Simple hyperopic astigmatism – first focal line is on the retina, while the second is located behind the retina.</li>
-          <li>Simple myopic astigmatism – first focal line is in front of the retina, while the second is on the retina.</li>
-          <ol>Compound astigmatism</ol>
-          <li>Compound hyperopic astigmatism – both focal lines are located behind the retina.</li>
-          <li>Compound myopic astigmatism – both focal lines are located in front of the retina.</li>
+          <b>Simple astigmatism</b>
+          <ol>Simple hyperopic astigmatism – first focal line is on the retina, while the second is located behind the retina.</ol>
+          <ol>Simple myopic astigmatism – first focal line is in front of the retina, while the second is on the retina.</ol>
+          <b>Compound astigmatism</b>
+          <ol>Compound hyperopic astigmatism – both focal lines are located behind the retina.</ol>
+          <ol>Compound myopic astigmatism – both focal lines are located in front of the retina.</ol>
           <ol>Mixed astigmatism – focal lines are on both sides of the retina (straddling the retina)</ol>
           <div class="koteret">Throughout the eye</div>
           <p>Astigmatism, whether it is regular or irregular, is caused by some combination of external (corneal surface) and internal (posterior corneal surface, human lens, fluids, retina, and eye-brain interface) optical properties. In some people, the external optics may have the greater influence, and in other people, the internal optics may predominate. Importantly, the axes and magnitudes of external and internal astigmatism do not necessarily coincide, but it is the combination of the two that by definition determines the overall optics of the eye. The overall optics of the eye are typically expressed by a person's refraction; the contribution of the external (anterior corneal) astigmatism is measured through the use of techniques such as keratometry and corneal topography. One method analyzes vectors for planning refractive surgery such that the surgery is apportioned optimally between both the refractive and topographic components.</p>
 
           </div>
 
+
+
+          <div class="gif">
+                <img src='images/squint.gif'>
+          </div>
+
    </div>
 
+ 
 
-
+ </div>
+        
 
     
   </body>
@@ -389,6 +414,20 @@
 
 
 
+
+   $('#blurbutton').on('click', function(){
+    $('html').addClass('blurfilter');
+    $(this).css({"background":"transparent", "color":"red"})
+    $("#unblurbutton").css({"background":"red", "color":"#fff"})
+      });
+
+   $('#unblurbutton').on('click', function(){
+   $('html').removeClass('blurfilter');
+   $(this).css({"background":"transparent", "color":"red"})
+   $("#blurbutton").css({"background":"red", "color":"#fff"})
+      });
+
 </script>
+
 </html>
 
