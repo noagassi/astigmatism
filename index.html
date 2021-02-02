@@ -12,12 +12,12 @@
   <body>
       <div class="bag">
             <button id="unblurbutton" onclick="blurfilter">normal</button>
-            <button id="blurbutton">compromise</button>
+            <button id="blurbutton">compromised</button>
 
           </div>
 
 
-          
+
       <div class="bodyblur">
       
 
@@ -416,13 +416,13 @@
 
 
    $('#blurbutton').on('click', function(){
-    $('html').addClass('blurfilter');
+    $('.sub, .num, .menu, img, .glasses, .mask, .masking').addClass('blurfilter');
     $(this).css({"background":"transparent", "color":"red"})
     $("#unblurbutton").css({"background":"red", "color":"#fff"})
       });
 
    $('#unblurbutton').on('click', function(){
-   $('html').removeClass('blurfilter');
+   $('.sub, .num, .menu, img, .glasses, .mask, .masking').removeClass('blurfilter');
    $(this).css({"background":"transparent", "color":"red"})
    $("#blurbutton").css({"background":"red", "color":"#fff"})
       });
